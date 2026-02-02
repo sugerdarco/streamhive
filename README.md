@@ -1,2 +1,2 @@
-# MingleHive
-MingleHive is a powerful backend solution for video streaming platforms.
+# StreamHive
+StreamHive is a powerful backend solution for video streaming platforms.
