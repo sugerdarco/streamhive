@@ -1,0 +1,30 @@
+.tweet-card {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+}
+.tweet-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+.tweet-author {
+  font-weight: 600;
+  font-size: var(--font-sm);
+  display: block;
+}
+.tweet-date {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+}
+.tweet-content {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+  white-space: pre-wrap;
+}
+.tweet-actions {
+  display: flex;
+  gap: var(--space-lg);
+}

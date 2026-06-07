@@ -1,1 +1,1 @@
-export const DB_NAME = "minglehivedb";
+export const DB_NAME = "streamhivedb";

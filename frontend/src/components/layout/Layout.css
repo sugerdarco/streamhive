@@ -1,0 +1,15 @@
+.layout {
+  min-height: 100vh;
+}
+
+.layout-main {
+  margin-top: var(--navbar-height);
+  min-height: calc(100vh - var(--navbar-height));
+  transition: margin-left var(--transition-base);
+}
+
+@media (min-width: 1024px) {
+  .layout-main {
+    margin-left: var(--sidebar-width);
+  }
+}

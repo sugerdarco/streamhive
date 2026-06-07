@@ -1,0 +1,32 @@
+.tweet-replies {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+.tweet-replies-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  color: var(--accent-primary);
+}
+.tweet-replies-header h3 {
+  flex: 1;
+  font-size: var(--font-md);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.tweet-replies-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.tweet-replies-loading,
+.tweet-replies-empty {
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+  text-align: center;
+  padding: var(--space-lg);
+}

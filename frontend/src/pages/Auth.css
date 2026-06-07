@@ -1,0 +1,106 @@
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-lg);
+  background: var(--bg-primary);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-elevated);
+}
+.auth-card-wide {
+  max-width: 580px;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+.auth-logo svg {
+  margin: 0 auto var(--space-md);
+}
+.auth-title {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-xs);
+}
+.auth-subtitle {
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+.auth-field label {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.auth-field input {
+  padding: 12px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-base);
+  transition: border-color var(--transition-fast);
+}
+.auth-field input:focus {
+  border-color: var(--accent-primary);
+}
+.auth-field input::placeholder {
+  color: var(--text-muted);
+}
+
+.auth-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+.auth-link {
+  color: var(--accent-primary);
+  font-weight: 600;
+  transition: opacity var(--transition-fast);
+}
+.auth-link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .auth-row {
+    grid-template-columns: 1fr;
+  }
+  .auth-card {
+    padding: var(--space-lg);
+  }
+}

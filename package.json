@@ -1,7 +1,7 @@
 {
-  "name": "minglehive",
+  "name": "streamhive",
   "version": "1.0.0",
-  "description": "MingleHive is a powerful backend solution for video streaming platforms.",
+  "description": "StreamHive is a powerful backend solution for video streaming platforms.",
   "type": "module",
   "main": "index.js",
   "scripts": {

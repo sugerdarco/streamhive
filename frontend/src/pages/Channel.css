@@ -1,0 +1,79 @@
+.channel-cover {
+  height: 200px;
+  background: var(--accent-gradient);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.channel-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--bg-primary) 100%);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 0 var(--space-xl);
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+.channel-avatar {
+  border: 3px solid var(--bg-primary);
+}
+.channel-info { flex: 1; min-width: 0; }
+.channel-name {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+}
+.channel-username {
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+}
+.channel-stats {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: 4px;
+}
+
+.channel-tabs {
+  display: flex;
+  gap: 0;
+  padding: 0 var(--space-xl);
+  margin-top: var(--space-xl);
+  border-bottom: 1px solid var(--border-color);
+}
+.channel-tab {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+.channel-tab:hover { color: var(--text-primary); }
+.channel-tab.active {
+  color: var(--text-primary);
+  border-bottom-color: var(--accent-primary);
+}
+
+.channel-placeholder {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-2xl);
+}
+.channel-about {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .channel-header { padding: 0 var(--space-md); }
+  .channel-tabs { padding: 0 var(--space-md); }
+}

@@ -1,0 +1,76 @@
+.video-manager-empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.video-table {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.video-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 120px;
+  padding: var(--space-md);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-color);
+}
+.video-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 120px;
+  padding: var(--space-md);
+  align-items: center;
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  transition: background var(--transition-fast);
+}
+.video-table-row:last-child { border-bottom: none; }
+.video-table-row:hover { background: var(--bg-hover); }
+
+.video-table-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+.video-table-thumb {
+  width: 64px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: var(--radius-xs);
+  flex-shrink: 0;
+}
+.video-status { font-weight: 600; font-size: var(--font-xs); }
+.video-status.published { color: var(--accent-success); }
+.video-status.draft { color: var(--accent-warning); }
+
+.video-table-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+.icon-btn {
+  padding: var(--space-xs);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+.icon-btn:hover { color: var(--text-primary); background: var(--bg-hover); }
+.icon-btn-danger:hover { color: var(--accent-primary); }
+
+@media (max-width: 768px) {
+  .video-table-header, .video-table-row {
+    grid-template-columns: 2fr 1fr 100px;
+  }
+  .video-table-header span:nth-child(3),
+  .video-table-header span:nth-child(4),
+  .video-table-row span:nth-child(3),
+  .video-table-row span:nth-child(4) {
+    display: none;
+  }
+}

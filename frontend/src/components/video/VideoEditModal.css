@@ -1,0 +1,33 @@
+.video-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.video-edit-form .auth-field input,
+.video-edit-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  transition: border-color var(--transition-fast);
+}
+.video-edit-form .auth-field input:focus,
+.video-edit-textarea:focus {
+  border-color: var(--accent-primary);
+}
+.video-edit-textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+.video-edit-textarea::placeholder {
+  color: var(--text-muted);
+}
+.video-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}

@@ -1,0 +1,45 @@
+.channel-header-wrapper {
+  position: relative;
+}
+.channel-cover {
+  height: 200px;
+  background: var(--accent-gradient);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.channel-cover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--bg-primary) 100%);
+}
+.channel-header-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: 0 var(--space-xl);
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+.channel-main-avatar {
+  border: 3px solid var(--bg-primary);
+}
+.channel-header-meta { flex: 1; min-width: 0; }
+.channel-header-name {
+  font-size: var(--font-2xl);
+  font-weight: 800;
+}
+.channel-header-username {
+  color: var(--text-muted);
+  font-size: var(--font-sm);
+}
+.channel-header-stats {
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  margin-top: 4px;
+}
+@media (max-width: 640px) {
+  .channel-header-info { padding: 0 var(--space-md); }
+}
